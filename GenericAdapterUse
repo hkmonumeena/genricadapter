@@ -1,0 +1,10 @@
+ class Adapter(arrayList: ArrayList<YourModelClass>,context: Context) :GenricAdapter <YourModelClass>(arrayList){
+        val context = context
+        override fun configure(item: YourModelClass, holder: ViewHolder, position: Int) {
+           val view = holder.itemView
+        }
+
+        override fun getItemCount(): Int {
+            return R.layout.yourlayoutname
+        }
+    }
